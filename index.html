@@ -6,21 +6,26 @@
 <title>Fast Labour Hire × Canyou Customer Story</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+  @font-face{font-family:'Termoli';font-weight:600;font-style:normal;font-display:swap;src:url("data:font/otf;base64,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") format("opentype");}
   :root{
-    --blue:#2C6CFB; --blue-deep:#1E59F0; --blue-700:#1746C8;
+    --blue:#2C6CFB; --blue-deep:#2667FF; --blue-700:#1746C8;
     --navy:#0A1550; --navy-2:#0E1E63;
     --blue-50:#EEF3FE; --blue-100:#D6E2FD;
-    --ink:#15161C; --ink-60:#4A5160; --ink-40:#828A9B;
-    --line:#E7EAF2; --paper:#fff; --bg-soft:#F6F8FC;
+    --brand-egg:#FFFDEE; --brand-light-blue:#709BFF; --brand-green:#06A77D;
+    --brand-pink:#FF8877; --brand-yellow:#FEDF46; --brand-orange:#F46F2A;
+    --brand-gray:#7D8CB5;
+    --ink:#1A202C; --ink-60:#4A5568; --ink-40:#718096;
+    --line:#E2E8F0; --paper:#fff; --bg-soft:#F7FAFC;
     --maxw:1080px;
-    --shadow:0 1px 2px rgba(10,21,80,.05),0 24px 48px -22px rgba(10,21,80,.22);
+    --shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+    --shadow-lg:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:'Hanken Grotesk',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-  .serif,.logo,h1,h2,h3,.disp{font-family:'Fraunces',Georgia,serif;letter-spacing:-.02em;}
+  body{font-family:'Roboto',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  .serif,h1,h2,h3,.disp{font-family:'Termoli',sans-serif;letter-spacing:-.02em;}
   .num{font-variant-numeric:tabular-nums;}
   a{color:inherit;text-decoration:none;}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
@@ -30,41 +35,43 @@
   @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none;}}
 
   /* progress + header */
-  #progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--blue),var(--navy));z-index:60;transition:width .1s linear;}
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  #progress{display:none;}
+  header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0px 3px 6px rgba(0,0,0,.16);}
   .hbar{display:flex;align-items:center;justify-content:space-between;height:64px;}
-  .logo{font-weight:800;font-size:24px;color:var(--blue-deep);}.logo b{color:var(--blue);}
-  nav.main{display:flex;gap:6px;align-items:center;}
-  nav.main a{font-size:13.5px;font-weight:600;color:var(--ink-60);padding:8px 13px;border-radius:100px;transition:.2s;}
-  nav.main a:hover{color:var(--ink);background:var(--blue-50);}
-  nav.main a.active{color:var(--blue-deep);background:var(--blue-50);}
-  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;border-radius:100px;padding:11px 18px;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s,background .2s;font-family:inherit;}
-  .btn-primary{background:var(--blue);color:#fff;}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px var(--blue);}
+  .logo{display:flex;align-items:center;}
+  .logo svg{display:block;}
+  nav.main{display:flex;gap:4px;align-items:center;}
+  nav.main a{font-size:16px;font-weight:500;color:var(--ink-60);padding:8px 14px;border-radius:4px;transition:color .15s ease-out;text-decoration:none;}
+  nav.main a:hover{color:var(--blue);text-decoration:none;}
+  nav.main a.active{color:var(--blue);}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;border-radius:24px;padding:12px 24px;cursor:pointer;border:none;transition:opacity .2s,box-shadow .2s,background .2s;font-family:inherit;line-height:1.2;white-space:nowrap;vertical-align:middle;}
+  .btn-primary{background:var(--blue);color:#fff;box-shadow:0 4px 14px 0 rgba(0,118,255,.36);}
+  .btn-primary:hover{opacity:.85;}
   .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5);}
   .btn-ghost:hover{background:rgba(255,255,255,.12);}
-  .btn-light{background:#fff;color:var(--blue-deep);}
-  .btn-light:hover{transform:translateY(-2px);}
-  .nav-cta{font-size:13.5px;padding:9px 16px;}
+  .btn-light{background:#fff;color:var(--blue);border:1px solid var(--blue);box-shadow:0px 5px 15px rgba(0,15,47,.08);}
+  .btn-light:hover{background:var(--bg-soft);}
+  .btn-outline{background:#fff;color:var(--blue);border:1px solid var(--blue);box-shadow:0px 5px 15px rgba(0,15,47,.08);}
+  .btn-outline:hover{background:var(--bg-soft);}
+  .nav-cta{font-size:14px;padding:10px 20px;}
   @media(max-width:820px){nav.main{display:none;}}
 
   /* hero */
   .hero{position:relative;background:linear-gradient(160deg,var(--blue) 0%,var(--blue-deep) 58%,var(--navy-2) 130%);color:#fff;padding:74px 0 130px;overflow:hidden;}
-  .hatch{position:absolute;opacity:.5;pointer-events:none;}
-  .hero .hatch{right:-40px;top:-40px;width:300px;height:300px;}
-  .eyebrow{display:inline-flex;gap:9px;align-items:center;font-size:11.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#BFD0FF;}
-  .eyebrow .pill{background:rgba(255,255,255,.14);padding:6px 12px;border-radius:100px;}
+  .hatch{display:none;}
+  .hero .hatch{display:none;}
+  .eyebrow{display:block;font-size:12px;font-weight:600;letter-spacing:.04em;color:rgba(255,255,255,.7);margin-bottom:6px;}
+  .eyebrow .pill{display:none;}
   .hero h1{font-size:clamp(34px,5.4vw,60px);line-height:1.04;font-weight:700;margin-top:20px;max-width:17ch;}
-  .hero h1 .hl{position:relative;white-space:nowrap;}
-  .hero h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.14em;background:rgba(255,255,255,.45);border-radius:3px;}
-  .hero p.lede{font-size:clamp(15px,1.7vw,18px);color:#D7E1FB;max-width:58ch;margin-top:20px;}
+  .hero h1 .hl{font-style:italic;}
+  .hero p.lede{font-size:clamp(15px,1.7vw,18px);color:rgba(255,255,255,.85);max-width:58ch;margin-top:20px;}
   .hero .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;}
   .wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;display:block;}
 
   /* KPI cards */
   .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-78px;position:relative;z-index:5;}
-  .kpi{background:#fff;border-radius:18px;padding:26px;box-shadow:var(--shadow);border-top:4px solid var(--blue);}
-  .kpi .big{font-family:'Fraunces';font-size:50px;font-weight:800;line-height:1;color:var(--blue-deep);}
+  .kpi{background:#fff;border-radius:16px;padding:26px;box-shadow:var(--shadow-lg);border:1px solid var(--line);}
+  .kpi .big{font-family:'Termoli';font-size:50px;font-weight:800;line-height:1;color:var(--blue-deep);}
   .kpi .big .u{font-size:21px;color:var(--ink-40);}
   .kpi .lbl{font-size:13.5px;font-weight:700;margin-top:8px;}
   .kpi .sub{font-size:12px;color:var(--ink-40);margin-top:2px;}
@@ -73,8 +80,8 @@
   .ribbon{display:flex;align-items:stretch;margin-top:22px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);}
   .ribbon .end{flex:1;padding:26px 28px;text-align:center;}
   .ribbon .from{background:var(--navy);color:#fff;} .ribbon .to{background:var(--blue-deep);color:#fff;}
-  .ribbon .lbl{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;opacity:.75;}
-  .ribbon .big{font-family:'Fraunces';font-size:40px;font-weight:800;line-height:1;margin-top:8px;}
+  .ribbon .lbl{font-size:12px;font-weight:600;letter-spacing:.01em;opacity:.7;}
+  .ribbon .big{font-family:'Termoli';font-size:40px;font-weight:800;line-height:1;margin-top:8px;}
   .ribbon .sm{font-size:12.5px;margin-top:7px;opacity:.86;}
   .ribbon .mid{display:flex;align-items:center;justify-content:center;background:var(--blue);padding:0 18px;color:#fff;}
   .ribbon .mid .a{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.18);display:grid;place-items:center;}
@@ -84,28 +91,29 @@
   /* sticky 3-act sub nav */
   .subnav{position:sticky;top:64px;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
   .subnav .row{display:flex;gap:6px;height:54px;align-items:center;justify-content:center;}
-  .subnav a{font-size:13.5px;font-weight:700;color:var(--ink-60);padding:8px 18px;border-radius:100px;display:flex;align-items:center;gap:8px;}
-  .subnav a .dot{width:7px;height:7px;border-radius:50%;background:var(--blue-100);}
-  .subnav a.active{background:var(--blue-deep);color:#fff;} .subnav a.active .dot{background:#fff;}
+  .subnav a{font-size:14px;font-weight:500;color:var(--ink-60);padding:8px 16px;border-radius:4px;display:flex;align-items:center;gap:8px;transition:color .15s;}
+  .subnav a .dot{display:none;}
+  .subnav a:hover{color:var(--blue);}
+  .subnav a.active{color:var(--blue);font-weight:600;border-bottom:2px solid var(--blue);border-radius:0;}
 
   /* ACTS + chapter dividers */
   .act{scroll-margin-top:130px;}
-  .act-tint{background:var(--blue-50);}
+  .act-tint{background:var(--brand-egg);}
+  .bg-egg{background:var(--brand-egg);}
   .chapter{padding:70px 0 4px;}
   .chapter .inner{display:flex;align-items:flex-end;gap:24px;}
-  .ch-no{font-family:'Fraunces';font-size:78px;font-weight:800;line-height:.78;color:var(--blue-100);}
-  .ch-kicker{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);}
-  .ch-title{font-family:'Fraunces';font-size:clamp(30px,5vw,46px);font-weight:800;line-height:1;margin-top:7px;}
+  .ch-no{display:none;}
+  .ch-kicker{font-size:13px;font-weight:600;letter-spacing:.01em;color:var(--blue);}
+  .ch-title{font-family:'Termoli';font-size:clamp(30px,5vw,46px);font-weight:800;line-height:1;margin-top:7px;}
   .ch-sub{font-size:15px;color:var(--ink-60);margin-top:14px;max-width:64ch;}
-  .chapter.dark{background:linear-gradient(135deg,var(--blue),var(--blue-deep));color:#fff;padding:58px 0;position:relative;overflow:hidden;}
+  .chapter.dark{background:var(--blue);color:#fff;padding:58px 0;position:relative;overflow:hidden;}
   .chapter.dark .hatch{right:-30px;bottom:-50px;width:260px;height:260px;}
   .chapter.dark .ch-no{color:rgba(255,255,255,.26);}
-  .chapter.dark .ch-kicker{color:#BFD0FF;}
-  .chapter.dark .ch-sub{color:#DCE6FB;}
+  .chapter.dark .ch-kicker{color:rgba(255,255,255,.7);}
+  .chapter.dark .ch-sub{color:rgba(255,255,255,.8);}
 
   .block{padding:34px 0 8px;}
-  .seclabel{display:inline-flex;align-items:center;gap:11px;font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);}
-  .seclabel::before{content:"";width:24px;height:2px;background:var(--blue);border-radius:2px;}
+  .seclabel{display:block;font-size:13px;font-weight:600;letter-spacing:.01em;color:var(--ink-40);margin-bottom:10px;}
   h2.sec{font-size:clamp(22px,3vw,28px);font-weight:700;margin-top:12px;line-height:1.12;max-width:24ch;}
   .intro{font-size:15.5px;color:var(--ink-60);margin-top:12px;max-width:62ch;}
 
@@ -113,14 +121,14 @@
   .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px;}
   .pchips{display:flex;flex-direction:column;gap:10px;}
   .pchip{display:flex;gap:12px;align-items:center;font-size:14px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
-  .pchip .x{flex:none;width:24px;height:24px;border-radius:7px;background:#FFE9ED;color:#E0556B;display:grid;place-items:center;}
+  .pchip .x{flex:none;width:24px;height:24px;border-radius:7px;background:var(--bg-soft);color:var(--ink-40);display:grid;place-items:center;}
   .pchip .x svg{width:12px;height:12px;}
   .ptext p{font-size:14.5px;color:var(--ink-60);margin-bottom:12px;}.ptext b{color:var(--ink);}
   .detail{overflow:hidden;max-height:0;transition:max-height .5s ease;}
   .detail.open{max-height:600px;}
   .detail .inner{padding-top:8px;font-size:14px;color:var(--ink-60);}
   .detail .inner p{margin-bottom:10px;}
-  .readmore{margin-top:14px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--blue-deep);background:var(--blue-50);border:none;cursor:pointer;padding:9px 15px;border-radius:100px;transition:.2s;font-family:inherit;}
+  .readmore{margin-top:14px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--blue-deep);background:var(--blue-50);border:none;cursor:pointer;padding:9px 15px;border-radius:24px;transition:.2s;font-family:inherit;}
   .readmore:hover{background:var(--blue-100);}
   .readmore svg{width:15px;height:15px;transition:transform .3s;}
   .readmore[aria-expanded="true"] svg{transform:rotate(180deg);}
@@ -130,34 +138,34 @@
   .breakpoint .hatch{right:0;top:0;width:130px;height:130px;opacity:.4;}
   .breakpoint .ic{flex:none;width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.14);display:grid;place-items:center;}
   .breakpoint .ic svg{width:21px;height:21px;}
-  .breakpoint .k{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#BFD0FF;}
+  .breakpoint .k{font-size:12px;font-weight:600;letter-spacing:.01em;color:rgba(255,255,255,.7);}
   .breakpoint p{font-size:14.5px;color:#E7ECFB;margin-top:6px;max-width:64ch;}
 
   /* decision banner */
   .banner{margin-top:22px;padding:34px 38px;border-radius:20px;background:#fff;border:1px solid var(--blue-100);position:relative;overflow:hidden;}
-  .banner .lab{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);}
-  .banner h3{font-family:'Fraunces';font-size:clamp(20px,2.6vw,26px);font-weight:700;margin-top:10px;max-width:24ch;}
+  .banner .lab{font-size:13px;font-weight:600;letter-spacing:.01em;color:var(--ink-40);margin-bottom:8px;}
+  .banner h3{font-family:'Termoli';font-size:clamp(20px,2.6vw,26px);font-weight:700;margin-top:10px;max-width:24ch;}
   .banner .bintro{font-size:14.5px;color:var(--ink-60);margin-top:12px;max-width:60ch;}
   .prio{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px;}
   .prio .chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;background:var(--blue-50);color:var(--blue-700);padding:10px 15px;border-radius:100px;transition:.2s;cursor:default;}
   .prio .chip:hover{background:var(--blue-100);transform:translateY(-2px);}
-  .prio .chip .n{font-family:'Fraunces';font-weight:800;color:var(--blue);}
-  .met{margin-top:14px;font-family:'Fraunces';font-size:19px;font-weight:700;color:var(--blue-deep);}
+  .prio .chip .n{font-family:'Termoli';font-weight:800;color:var(--blue);}
+  .met{margin-top:14px;font-family:'Termoli';font-size:19px;font-weight:700;color:var(--blue-deep);}
 
   /* quote */
-  .quote{display:flex;gap:20px;align-items:center;margin-top:22px;padding:24px 26px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:16px;box-shadow:0 16px 36px -24px rgba(10,21,80,.25);}
+  .quote{display:flex;gap:20px;align-items:center;margin-top:22px;padding:28px 30px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);}
   .quote .av{flex:none;width:80px;height:80px;border-radius:50%;border:3px solid var(--blue-100);}
-  .quote .qt{font-family:'Fraunces';font-size:17px;line-height:1.45;font-weight:500;color:var(--ink);}
+  .quote .qt{font-family:'Termoli';font-size:17px;line-height:1.45;font-weight:500;color:var(--ink);}
   .quote .by{font-size:12.5px;color:var(--ink-40);margin-top:9px;font-weight:700;}.quote .by b{color:var(--ink);}
-  .pq{margin-top:20px;padding-left:18px;border-left:3px solid var(--blue);}
-  .pq .qt{font-family:'Fraunces';font-size:15.5px;font-style:italic;color:var(--ink);line-height:1.5;}
+  .pq{margin-top:20px;padding-left:18px;border-left:3px solid var(--blue-100);}
+  .pq .qt{font-family:'Termoli';font-size:15.5px;font-style:italic;color:var(--ink);line-height:1.5;}
   .pq .by{font-size:12px;color:var(--ink-40);font-weight:700;margin-top:6px;}.pq .by b{color:var(--ink);}
 
   /* solution */
   .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:20px;}
   .card{background:#fff;border:1px solid var(--blue-100);border-radius:16px;padding:22px;transition:transform .25s, box-shadow .25s;}
   .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
-  .card .ci{width:40px;height:40px;border-radius:11px;background:var(--blue-deep);color:#fff;display:grid;place-items:center;margin-bottom:13px;}
+  .card .ci{width:40px;height:40px;border-radius:10px;background:var(--blue-50);color:var(--blue);display:grid;place-items:center;margin-bottom:13px;}
   .card .ci svg{width:20px;height:20px;}
   .card h3{font-size:14.5px;font-weight:800;line-height:1.25;}
   .flow{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:18px;background:#fff;border:1px solid var(--blue-100);border-radius:16px;padding:18px 22px;}
@@ -172,12 +180,12 @@
   .seg button{border:none;background:transparent;font-family:inherit;font-size:13px;font-weight:700;color:var(--ink-60);padding:9px 16px;border-radius:100px;cursor:pointer;transition:.2s;}
   .seg button.active{background:var(--blue-deep);color:#fff;}
   .cmp{display:grid;grid-template-columns:1fr 1fr;margin-top:16px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);}
-  .cmp .col .ch{padding:18px 22px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:9px;}
+  .cmp .col .ch{padding:18px 22px;font-size:13px;font-weight:600;letter-spacing:.01em;display:flex;align-items:center;gap:9px;}
   .cmp .col.bef{background:var(--navy);color:#fff;} .cmp .col.bef .ch{color:#A9B6E8;}
   .cmp .col.aft{background:var(--blue-deep);color:#fff;}
   .cmp .col.aft .ch .d{width:8px;height:8px;border-radius:50%;background:#fff;}
   .cmp .ln{padding:16px 22px;border-top:1px solid rgba(255,255,255,.12);font-size:14px;min-height:64px;display:flex;flex-direction:column;justify-content:center;}
-  .cmp .ln .area{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.6;margin-bottom:4px;}
+  .cmp .ln .area{font-size:11px;font-weight:600;letter-spacing:.01em;opacity:.6;margin-bottom:4px;}
   .cmp .col.bef .ln{color:#C3CDF0;} .cmp .col.aft .ln{color:#fff;font-weight:700;}
   .cmp .col{transition:opacity .4s ease, filter .4s ease;}
   .cmp[data-state="before"] .col.aft{opacity:.28;filter:grayscale(.4);}
@@ -196,16 +204,17 @@
   .tag{font-size:12.5px;font-weight:700;color:var(--blue-700);background:var(--blue-50);padding:8px 13px;border-radius:8px;}
 
   /* closing */
-  .closing{position:relative;background:linear-gradient(160deg,var(--blue-deep),var(--navy-2));color:#fff;margin-top:60px;padding:96px 0 56px;overflow:hidden;}
+  .closing{position:relative;background:var(--blue);color:#fff;margin-top:0;padding:80px 0 60px;overflow:hidden;}
   .closing .wave-top{position:absolute;left:0;right:0;top:-1px;width:100%;}
   .closing .hatch{right:-30px;top:70px;width:260px;height:260px;}
-  .closing .lab{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#BFD0FF;}
-  .closing h2{font-family:'Fraunces';font-size:clamp(26px,3.6vw,34px);font-weight:700;margin-top:12px;max-width:24ch;}
-  .closing p{font-size:15.5px;color:#D7E1FB;margin-top:14px;max-width:62ch;}
+  .closing .lab{font-size:13px;font-weight:600;letter-spacing:.01em;color:rgba(255,255,255,.7);margin-bottom:8px;}
+  .closing h2{font-family:'Termoli';font-size:clamp(26px,3.6vw,34px);font-weight:700;margin-top:12px;max-width:24ch;}
+  .closing p{font-size:15.5px;color:rgba(255,255,255,.8);margin-top:14px;max-width:62ch;}
   .closing .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;}
   footer{background:var(--navy);color:#9FB0E6;padding:30px 0;}
   footer .fb{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:11.5px;}
-  footer .logo{font-size:18px;color:#fff;}footer .logo b{color:#BFD0FF;}
+  footer .logo{display:flex;align-items:center;}
+  footer .logo svg path,.footer-logo path{fill:#fff;stroke:#fff;}
 
   @media(max-width:820px){
     .kpis,.cards,.pgrid{grid-template-columns:1fr;}
@@ -218,7 +227,47 @@
     .chapter .inner{flex-direction:column;align-items:flex-start;gap:8px;}
     .ch-no{font-size:56px;}
     footer .fb{flex-direction:column;text-align:center;}
+    #demo-popup{width:calc(100vw - 40px);}
   }
+
+  .kpi-section{position:relative;overflow:hidden;padding-bottom:44px;}
+  .kpi-section .wrap{position:relative;z-index:1;}
+  .dog-wm{position:absolute;left:-350px;top:40px;width:880px;pointer-events:none;z-index:0;}
+
+  /* Light blue sections */
+  .act-lightblue{background:#EBF0FF;}
+
+  /* Book a Demo backdrop + modal */
+  #demo-backdrop{
+    position:fixed;inset:0;z-index:190;
+    background:rgba(10,21,80,.5);
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+    opacity:0;pointer-events:none;
+    transition:opacity .4s ease;
+  }
+  #demo-backdrop.visible{opacity:1;pointer-events:auto;}
+  #demo-backdrop.hidden{display:none;}
+  #demo-popup{
+    position:fixed;top:50%;left:50%;
+    transform:translate(-50%,-56%);
+    z-index:200;
+    width:440px;max-width:calc(100vw - 40px);
+    background:#fff;border-radius:24px;padding:40px;
+    box-shadow:0 24px 80px rgba(0,0,0,.22);
+    border:1px solid var(--blue-100);
+    opacity:0;pointer-events:none;
+    transition:opacity .4s cubic-bezier(.2,.7,.2,1),transform .4s cubic-bezier(.2,.7,.2,1);
+  }
+  #demo-popup.visible{transform:translate(-50%,-50%);opacity:1;pointer-events:auto;}
+  #demo-popup.hidden{display:none;}
+  .popup-logo{margin-bottom:20px;}
+  .popup-h{font-family:'Termoli',sans-serif;font-size:22px;font-weight:700;color:var(--ink);line-height:1.18;margin-bottom:10px;}
+  .popup-sub{font-size:14px;color:var(--ink-60);margin-bottom:24px;line-height:1.55;}
+  .popup-cta{display:flex;align-items:center;justify-content:center;width:100%;text-align:center;}
+  .popup-dismiss{display:block;text-align:center;margin-top:14px;font-size:12.5px;color:var(--ink-40);cursor:pointer;transition:color .15s;}
+  .popup-dismiss:hover{color:var(--ink-60);}
+  .popup-close{position:absolute;top:14px;right:16px;background:none;border:none;cursor:pointer;color:var(--ink-40);font-size:22px;line-height:1;padding:4px 8px;transition:color .15s;}
+  .popup-close:hover{color:var(--ink);}
 </style>
 </head>
 <body>
@@ -227,11 +276,11 @@
 <!-- HEADER -->
 <header>
   <div class="wrap hbar">
-    <div class="logo">Canyou<b>.</b></div>
+    <a href="https://canyou.com.au" target="_blank" rel="noopener" class="logo" aria-label="Canyou"><svg width="90" id="Layer_1" data-name="Layer 1" viewBox="0 0 335 96"><defs><style>.canyoulogo-blue-1{fill:#2667FF;stroke:#2667FF;stroke-miterlimit:10;}</style></defs><path class="canyoulogo-blue-1" d="M545.32,412.92c13.82,0,24.53-8.92,24.53-29.66h-6.74c0,14-4.84,22.29-16.32,22.29-14,0-17.54-12.23-17.54-29.76,0-18.46,3.89-31.53,15.12-31.53,8.37,0,13.56,7.16,14.94,21.26h10.54V337H563.8v13.9c-3.63-9.44-10.88-13.9-19.17-13.9C527.78,337,515,355.25,515,375.37c0,17.84,9.85,37.55,30.32,37.55Zm43.44-.83A15.69,15.69,0,0,0,603.88,402c1.12,6.84,4.75,10.06,10.1,10.06,7.6,0,10.19-6,10.28-16.08h-5.61c0,5.19-.52,7.47-2.77,7.47-2.42,0-2.5-2.49-2.5-6.74v-23c0-12-6.83-16.8-17.62-16.8-13.91,0-19.7,7.68-19.7,14.63,0,4.46,2.51,8.4,6.83,8.4,4.06,0,6.48-3.63,6.48-7.37a7.93,7.93,0,0,0-3.2-6.53,12.57,12.57,0,0,1,7.34-2.18c5.44,0,8.38,2.7,8.38,9.23v7l-7.34,1.24c-12.35,2.18-19.18,6-19.18,16.6,0,9.85,5.79,14.21,13.39,14.21Zm-1-16c0-6.12,2.94-8,9.16-9.44l4.92-.94v5.71c0,7.36-3.2,12.34-8.29,12.34-4,0-5.79-2.9-5.79-7.67Zm38.26,15.14h24.45v-6.74H644.9V385.85c0-13.8,3.89-19.5,9.68-19.5,3.45,0,6,2.18,6,8.4v29.77H655v6.74H678.5v-6.74h-6.39V373.2c0-9.34-4.58-16.29-13.39-16.29-7.6,0-13.56,4.57-16.06,15.25V358H625.21v6.74h8.21v39.83h-7.35v6.74ZM690.59,432c9.68,0,14.6-9.33,16.93-16.28l17-51h6V358H710.46v6.74h7.77l-10.79,33.6-11.06-33.6h7.26V358h-25v6.74h5l18.06,49.47-.61,1.87c-1.47,4.56-5.09,8.4-9.24,8.61a13.82,13.82,0,0,0,.86-4.67c0-4.05-1.9-8.09-6.56-8.09-4.49,0-7.08,4.36-7.08,9,0,5.29,3.54,11.1,11.48,11.1Zm61.33-19.91c11.05,0,21.68-9.86,21.68-27.07,0-16.28-9.42-28.11-21.68-28.11-11,0-21.68,9.86-21.68,27.07,0,16.28,9.5,28.11,21.68,28.11Zm-8.81-28.52c0-16.08,3.45-19.6,8.46-19.6,4.75,0,9.25,3.31,9.25,21.46,0,16.08-3.46,19.6-8.47,19.6-4.75,0-9.24-3.31-9.24-21.46Zm52.51,28.52c7.52,0,13-4.88,15.38-16.39v15.56h16.24v-6.74H820V358H801.76v6.74h6.73v18.36c0,13.9-3.63,19.6-9.33,19.6-3.54,0-5.61-2.28-5.61-8.3V358H774.72v6.74h7.34V395.8c0,9.34,4.75,16.29,13.56,16.29Zm45,.52c5.1,0,8.38-3.95,8.38-9.55s-3.28-9.54-8.38-9.54-8.38,3.94-8.38,9.54,3.37,9.55,8.38,9.55Z" transform="translate(-514.5 -336.5)"></path></svg></a>
     <nav class="main">
-      <a href="#before">Before</a>
-      <a href="#during">During</a>
-      <a href="#after">After</a>
+      <a href="#before">Before Canyou</a>
+      <a href="#during">During implementation</a>
+      <a href="#after">Now, with Canyou</a>
     </nav>
     <a class="btn btn-primary nav-cta" href="https://canyou.com.au" target="_blank" rel="noopener">Visit canyou.com.au</a>
   </div>
@@ -241,7 +290,7 @@
 <section class="hero">
   <svg class="hatch" viewBox="0 0 300 300"><defs><pattern id="h1" width="11" height="11" patternTransform="rotate(135)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="11" stroke="#fff" stroke-width="1"/></pattern></defs><rect width="300" height="300" fill="url(#h1)"/></svg>
   <div class="wrap">
-    <div class="eyebrow reveal"><span class="pill">Customer Story</span> Labour Hire · Australia</div>
+    <div class="eyebrow reveal">Customer Story · Labour Hire · Australia</div>
     <h1 class="reveal">How Fast Labour Hire Reduced Worker Onboarding from <span class="hl">6 Hours</span> to <span class="hl">15 Minutes</span> with Canyou</h1>
     <p class="lede reveal">Fast Labour Hire places and manages workers across construction, trades, warehousing, and logistics. With 16–50 staff and 500+ workers managed at any time, same-day job-readiness is the standard.</p>
     <div class="cta-row reveal">
@@ -253,6 +302,26 @@
 </section>
 
 <!-- KPIs + ribbon (at a glance) -->
+<div class="kpi-section">
+<svg class="dog-wm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="enable-background:new 0 0 1366 768;" xml:space="preserve" viewBox="425.75 107.74 514.52 558.5" aria-hidden="true">
+<style type="text/css">
+	.dog-wm-0{fill:#F6F6F6;stroke:#F6F6F6;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:10;}
+	.dog-wm-1{fill:#F6F6F6;}
+</style>
+<g>
+	<g>
+		<path class="dog-wm-1" d="M797.55,660.01c-11.44,0-20.75-10.96-20.75-24.43c0-4.54,1.04-8.89,3-12.68c-2.25-0.89-4.43-1.71-6.34-2.33    c-26-8.5-54.3-13-81.85-13c-27.86,0-56.16,4.49-81.83,13c-2,0.66-4.39,1.56-6.81,2.51c1.89,3.74,2.91,8.04,2.91,12.5    c0,13.47-9.31,24.43-20.75,24.43s-20.75-10.96-20.75-24.43c0-4.5,1.06-8.92,3.06-12.77l0.06-0.13c1.39-2.63,3.15-4.89,5.25-6.72    c5.33-5.44,12.86-10.98,17.58-13.67c21.58-12.26,50.36-23.31,82.92-25.43l-19.45-76.96c-0.22-1.17,4.88-5.64,5.64-6.56    c0.76-0.91,1.89-1.44,3.08-1.44h57.12c1.18,0,2.3,0.52,3.06,1.43c0.76,0.9,5.95,1.41,5.74,2.57l-18.86,81.35    c32.65,2.09,61.68,12.74,83.31,25.04c6.39,3.63,20.18,15.12,23.8,23.87c1.07,3.01,1.61,6.17,1.61,9.42    C818.3,649.05,808.99,660.01,797.55,660.01z M692.29,596.89c28.38,0,56.86,7.31,83.65,16.07c3.42,1.12,7.49,2.75,11.39,4.35    c1.18,0.48,3.82,1.88,4.13,3.12s0.01,2.54-0.81,3.52c-2.63,3.16-5.85,7.04-5.85,11.62c0,9.06,5.72,16.43,12.75,16.43    s12.75-7.37,12.75-16.43c0-2.44-0.42-4.81-1.26-7.05c-0.13-0.35-0.21-0.72-0.24-1.09c-1.18-3.93-11.46-13.41-19.86-18.18    c-21.56-12.25-51.72-19.87-84.92-21.44c-1.15-0.05-2.22-0.6-2.93-1.5c-0.72-0.9-1.02-2.06-0.82-3.19l14.6-83.21h-47.55    l15.43,83.18c0.21,1.14-0.08,2.31-0.8,3.21c-0.72,0.91-1.79,1.46-2.94,1.51c-33.13,1.59-63.22,9.21-84.74,21.43    c-4.16,2.36-11.16,7.52-15.93,12.42c-0.08,0.08-0.17,0.17-0.26,0.24c-1.4,1.2-2.58,2.71-3.53,4.5l-0.04,0.07    c-1.42,2.74-2.17,5.87-2.17,9.09c0,9.06,5.72,16.43,12.75,16.43s12.75-7.37,12.75-16.43c0-4.53-2.71-8.3-5.28-11.44    c-0.81-0.99-1.5-2.22-1.18-3.45c0.32-1.23,2.89-2.77,4.07-3.25c4.06-1.63,8.31-3.32,11.78-4.47    C633.73,604.2,663.59,596.89,692.29,596.89z"/>
+	</g>
+	<path class="dog-wm-0" d="M508.91,447.15c0.13-0.71,0.33-1.14,0.26-1.52c-2.52-13.35-0.9-26.47,2.48-39.43   c6.07-23.28,16.86-44.14,32.7-62.31c8.96-10.28,18.8-19.64,29.17-28.47c15.98-13.61,33.03-25.8,50.37-37.57   c14.56-9.88,29.27-19.54,43.73-29.56c9.07-6.28,17.95-12.86,26.63-19.66c12.12-9.51,22.91-20.44,32.8-32.25   c7.5-8.95,14.86-18.02,22.3-27.02c6.94-8.39,14.26-16.43,22.07-24.03c13.21-12.86,28.21-23.05,45.29-30.08   c7.27-2.99,14.77-5.18,22.53-6.51c5.91-1.01,11.76-1.01,17.65,0.06c6.82,1.23,13.33,3.31,19.5,6.46   c9.54,4.87,16.18,12.35,20.04,22.32c0.34,0.88,0.73,1.74,1.13,2.69c6.98,0.85,13.49,2.94,19.71,5.97   c5.65,2.75,10.85,6.15,15.29,10.64c4.18,4.24,6.87,9.22,7.38,15.22c0.3,3.55-0.27,7.03-1.19,10.44   c-3.57,13.2-11.68,22.94-23.25,29.9c-7.05,4.24-14.78,6.83-22.77,8.68c-2.02,0.47-4.09,0.76-6.12,1.18   c-1.37,0.29-2.73,0.67-4.12,1.01c1.66,15.48-0.25,30.55-2.22,45.58c-3.27,24.91-8.48,49.48-13.41,74.09   c-2.76,13.79-5.83,27.53-8.81,41.28c-0.41,1.92-0.45,3.78-0.14,5.7c2.15,13.26,3.76,26.59,4.85,39.99   c0.95,11.64,2.13,23.25,3.18,34.88c1.66,18.5,2.54,37.03,1.38,55.6c-0.46,7.35-1.38,14.66-3.67,21.71   c-0.94,2.88-2.06,5.73-3.44,8.42c-2.89,5.64-7.44,9.53-13.37,11.78c-4.39,1.67-8.92,2.47-13.62,2.36   c-6.71-0.15-12.44-2.63-17.3-7.22c-1.14-1.08-2.29-2.15-3.53-3.32c-1.13,0.99-2.06,1.84-3.03,2.65c-5.38,4.46-11.41,5.46-18,3.32   c-4.96-1.61-9.21-4.39-12.92-8.03c-4.36-4.27-8.12-9.03-11.6-14.04c-1.82-2.62-3.95-5.02-5.8-7.62c-2.88-4.02-5.65-8.12-8.79-12.66   c-0.68,0-1.94-0.09-3.18,0.01c-8.45,0.72-16.9,1.34-25.33,2.25c-26.79,2.88-53.62,3.48-80.52,2c-9.9-0.55-19.82-0.9-29.72-1.51   c-13.73-0.85-27.45-1.86-40.99-4.48c-2.2-0.43-3.92-0.04-5.8,1.26c-2.61,1.81-5.45,3.35-8.34,4.68   c-8.86,4.06-17.94,4.19-27.11,1.08c-4.42-1.49-8.56-3.55-12.44-6.14c-1.34-0.9-2.63-1.64-4.4-1.5c-4.69,0.35-9.22-0.66-13.67-2.08   c-6.93-2.2-13.32-5.44-19.01-9.98c-1.79-1.43-3.62-2.44-5.93-2.88c-2.16-0.42-4.27-1.31-6.29-2.24c-3.94-1.82-7.54-4.23-10.83-7.05   c-14.86-12.72-25.29-28.33-30.29-47.33c-2.09-7.93-3.19-16-1.73-24.22c0.03-0.16,0.04-0.32,0.07-0.48   c1.98-12.15,10.69-18.71,22.9-17.19c3.98,0.5,7.83,1.58,11.55,3.11c4.76,1.95,9.23,4.43,13.47,7.31   c12.32,8.35,22.75,18.61,31.17,30.91C506.67,444.58,507.29,446.11,508.91,447.15z M765.92,512.11c0.72-1.66,1.09-2.69,1.61-3.64   c0.53-0.98,1.08-1.98,1.82-2.79c1.64-1.77,4.22-1.05,4.79,1.3c0.22,0.92,0.22,1.9,0.24,2.86c0.03,2.4,0,4.8,0.02,7.2   c0.09,10.26,3.99,18.96,10.9,26.41c2.65,2.85,5.77,5,9.5,6.3c3.08,1.08,5.78,0.49,7.91-1.79c1.62-1.73,3.05-3.72,4.18-5.8   c2.38-4.37,3.95-9.08,4.92-13.97c1.61-8.21,2.16-16.51,1.54-24.83c-0.86-11.64-1.96-23.27-3.01-34.9   c-1.09-12.11-2.48-24.2-2.5-36.37c-0.01-11.36-0.02-22.72,0.27-34.07c0.21-8.47,0.74-16.95,2.65-25.25c1-4.36,2.17-8.68,3.5-12.95   c1.17-3.76,1.46-7.33,0.32-11.24c-3.14-10.79-4.49-21.92-5.37-33.09c-0.25-3.15,0.2-6.37,0.5-9.54c0.1-1.07,0.62-2.14,1.16-3.1   c0.56-1.01,1.55-1.86,2.73-1.41c0.78,0.29,1.66,1.14,1.88,1.91c0.52,1.82,0.73,3.75,0.96,5.64c0.24,2.02,0.13,4.11,1.56,6.64   c0.25-1.6,0.41-2.47,0.51-3.34c1.6-14.21,4.9-27.98,10-41.37c5.32-13.95,12.86-26.8,19.16-40.26c0.38-0.81,0.74-1.63,1.24-2.73   c-1.73-0.35-3.12-0.66-4.51-0.91c-2.68-0.48-5.37-0.86-8.03-1.4c-0.8-0.17-1.91-0.32-1.9-1.72c0.41-0.19,0.81-0.49,1.23-0.55   c5.55-0.74,11.11-1.37,16.64-2.17c10.76-1.56,21.52-3.14,32.1-5.68c8.26-1.98,16.34-4.47,23.93-8.38   c6.96-3.59,12.76-8.5,17.16-14.99c2.24-3.31,4.13-6.81,4.62-9.9c-1.22-3.77-2.52-6.58-2.99-9.53c-0.47-2.93-0.1-6-0.1-9.37   c-8.26-8.61-18.67-13.77-30.41-16.71c-0.89,0.71-1.58,1.38-2.37,1.88c-2.23,1.42-4.39,1.05-5.81-1.13   c-0.77-1.19-1.35-2.55-1.75-3.91c-2.57-8.64-7.99-14.82-16.02-18.74c-11.48-5.61-23.34-7.23-35.88-3.92   c-21.93,5.79-40.36,17.43-56.49,33.07c-1.46,1.41-2.3,2.99-2.38,5.04c-0.17,3.99-0.44,7.98-0.61,11.96   c-0.03,0.71-0.27,1.63,0.74,2.01c0.91-0.65,1.74-1.4,2.7-1.91c1.25-0.66,2.69,0.47,2.48,1.87c-0.09,0.63-0.26,1.25-0.46,1.86   c-1.21,3.7-1.52,7.53-1.41,11.37c0.21,7.71,1.43,15.28,3.79,22.64c1.32,4.11,2.84,8.17,5.25,11.8c3.78,5.69,8.71,7.14,14.95,4.38   c3.11-1.37,5.77-3.41,8.24-5.72c4.26-3.97,7.7-8.59,10.43-13.69c3.24-6.06,6.32-12.22,9.22-18.44c2.84-6.09,5.13-12.41,6.81-18.93   c2.4-9.31,3.95-18.77,5.05-28.31c0.09-0.82-0.25-1.43,1.11-2.57c1-0.68,1.25,1.27,1.5,2.13c1.78,6.07,1.77,12.7,1.12,18.94   c-0.66,6.36-1.39,12.73-2.63,18.99c-2.67,13.45-7.64,26.05-15.08,37.63c-3.13,4.87-6.65,9.43-11.11,13.15   c-2.57,2.14-5.37,4.03-8.21,5.8c-2.59,1.61-5.51,2.52-8.54,3.03c-7.62,1.28-13.88-1.05-18.73-7.06c-3.28-4.08-5.2-8.85-6.22-13.89   c-1.17-5.79-2.01-11.65-2.78-17.51c-0.3-2.25-0.75-4.34-1.8-6.38c-2.43-4.74-3.88-9.8-4.35-15.12c-0.23-2.55-0.38-5.1-0.6-7.65   c-0.06-0.73,0.2-1.65-1.23-1.98c-2.09,2.41-4.33,4.88-6.46,7.44c-7.55,9.12-15.03,18.29-22.59,27.4   c-12.94,15.57-27.46,29.5-43.71,41.58c-6.42,4.77-12.89,9.47-19.49,13.98c-14.13,9.65-28.39,19.12-42.56,28.72   c-15.63,10.6-31.02,21.51-45.6,33.53c-11.25,9.28-21.94,19.13-31.64,30.04c-14.37,16.18-24.38,34.74-30.4,55.49   c-2.01,6.93-3.45,13.98-4.09,21.17c-1.17,13.14,1.86,25.41,8.06,36.96c4.02,7.48,8.76,14.51,13.76,21.36   c0.33,0.45,0.87,0.74,1.7,1.43c0.31-2.71,0.52-4.89,0.81-7.06c2.12-15.73,5.79-31.12,10.38-46.29c2.87-9.49,6.28-18.81,10.74-27.7   c3.85-7.67,8.9-14.43,15.58-19.86c6.47-5.26,13.41-9.82,20.83-13.66c13.44-6.96,27.64-11.83,42.35-15.11   c18.1-4.04,36.37-7.25,54.73-9.96c0.85-0.13,1.66-0.59,2.7-0.98c-1.63-3.85-3.72-7.05-5.85-10.22   c-6.91-10.29-16.79-15.44-28.91-16.61c-9.23-0.89-18.18,0.69-26.95,3.46c-16.31,5.15-31.25,13.04-45.24,22.79   c-8.83,6.15-16.78,13.32-24.33,20.95c-1.01,1.02-2.08,1.99-3.24,2.81c-0.4,0.28-1.32,0.24-1.74-0.04c-0.42-0.29-0.83-1.13-0.71-1.6   c0.38-1.53,0.83-3.1,1.56-4.49c2.39-4.56,5.52-8.63,9.05-12.35c18.15-19.08,39.77-32.51,65.19-39.63   c7.89-2.21,15.94-3.46,24.17-3.13c16.21,0.64,28.85,7.58,37.5,21.4c2.12,3.38,3.88,6.98,5.79,10.49c0.6,1.11,1.16,2.24,1.71,3.31   c0.68,0.05,1.17,0.21,1.6,0.11c6.63-1.55,13.39-1.31,20.06-0.85c9.08,0.63,16.01,5.11,20.43,13.18c2.33,4.25,3.74,8.82,4.32,13.64   c0.82,6.86,0.94,13.73,0.36,20.6c-1.14,13.55-2.34,27.09-3.6,40.62c-1.35,14.36-1.81,28.73-0.57,43.12   c0.51,5.9,1.25,11.77,2.85,17.49c0.14,0.5,0.58,0.92,1.24,1.93c0.7-2.48,1.18-4.29,1.73-6.09c0.61-1.99,1.25-3.97,1.94-5.93   c0.63-1.81,1.32-3.6,2.04-5.38c0.77-1.93,1.6-3.84,2.42-5.75c0.75-1.76,1.45-3.56,2.3-5.27c0.87-1.77,1.26-3.86,3.15-5.48   c0.81,1.69,0.48,3.11,0.34,4.44c-1.05,9.7-2.19,19.39-3.25,29.08c-0.52,4.76-0.97,9.54-1.33,14.32   C764.6,508.25,764.54,509.88,765.92,512.11z M560.84,513.47c-1.2-0.41-2.08-0.77-3-1.01c-6.86-1.81-12.55-5.48-17.26-10.73   c-1.5-1.67-2.99-3.34-4.4-5.08c-6.67-8.21-12.5-17-17.78-26.16c-1.19-2.07-2.54-4.06-3.93-6.01c-10.22-14.28-22.7-26.43-36-37.76   c-4.36-3.72-9.16-6.97-13.91-10.2c-3.57-2.43-7.46-4.38-11.64-5.58c-2.29-0.65-4.66-1.28-7.02-1.42c-5.8-0.34-9.82,2.52-11.58,8.05   c-0.53,1.66-0.84,3.42-1,5.16c-0.6,6.43,0.02,12.78,1.65,19.02c5.05,19.42,15.86,35.07,31.36,47.62c0.5,0.4,1.02,0.78,1.55,1.13   c0.51,0.33,1.04,0.8,1.77,0.01c-0.83-1.3-1.78-2.59-2.51-4c-1.54-2.98-3.12-5.95-4.37-9.05c-1.2-2.98-1.72-6.15-1.45-9.41   c0.14-1.72,0.42-3.37,1.88-5.09c0.49,0.86,0.8,1.34,1.05,1.85c1.2,2.43,2.19,4.99,3.6,7.28c2.51,4.08,5.09,8.15,7.98,11.97   c3.09,4.06,6.37,8.02,9.93,11.67c5.19,5.32,11.4,9.26,18.41,11.85c0.7,0.26,1.44,0.4,2.16,0.6c-3.79-4.89-8.1-9.11-11.36-14.17   c-3.27-5.08-5.92-10.39-6.24-17.21c1.34,0.84,1.78,1.66,2.3,2.42c1.45,2.11,2.74,4.36,4.41,6.27c8.25,9.44,17.4,17.87,28.09,24.51   c4.08,2.54,8.43,4.54,13.02,6.04c8.01,2.62,15.77,1.71,23.42-1.36C560.2,514.59,560.32,514.21,560.84,513.47z M637.99,445.67   c2.58,0.6,4.59,1.04,6.58,1.55c8.29,2.13,15.91,5.78,23.14,10.29c3.8,2.37,7.49,4.9,11.18,7.45c1.4,0.97,2.82,1.4,4.5,1.09   c1.88-0.35,3.79-0.62,5.67-0.98c6.43-1.24,12.88-2.43,19.28-3.82c2.32-0.5,4.58-1.4,6.78-2.34c2.17-0.93,3.65-2.55,3.85-5.07   c0.2-2.38,0.59-4.76,0.65-7.15c0.2-8.51-0.89-16.92-2.3-25.28c-0.98-5.83-2.19-11.62-3.4-17.41c-0.66-3.17-2.12-6.01-4-8.64   c-0.97-1.36-2.25-2.17-3.86-2.64c-2.52-0.74-5.09-0.87-7.6-0.32c-5.61,1.24-11.18,2.67-16.76,4.06c-0.6,0.15-1.13,0.53-1.8,0.86   c-0.51,2.02-1.07,4.01-1.5,6.03c-2.35,11.05-7.69,20.6-14.66,29.33c-0.77,0.97-1.81,1.79-2.87,2.44c-1.01,0.63-2.47-0.02-2.67-1.17   c-0.36-2.03-0.51-4.11-0.78-6.16c-0.09-0.7,0.29-1.63-1.06-2.04C651.01,432.78,644.97,439.29,637.99,445.67z M851.15,413.33   c-0.27-0.06-0.53-0.13-0.8-0.19c-0.36,1-0.76,2-1.09,3.01c-2.93,8.95-5.68,17.97-8.81,26.85c-4.57,12.95-9.41,25.8-14.15,38.69   c-0.33,0.89-0.62,1.92-1.26,2.56c-2.08,2.1-1.74,4.59-1.63,7.17c0.29,7.18,0.69,14.37,0.58,21.55c-0.14,8.64-1.24,17.21-3.82,25.51   c-0.8,2.57-1.76,5.1-2.66,7.68c1.47,2.52,3.47,4.27,6.08,5.29c4.69,1.85,9.52,2.67,14.56,1.93c6.32-0.93,11.07-3.99,13.47-10.11   c0.93-2.37,1.78-4.8,2.39-7.27c1.87-7.64,2.51-15.44,2.78-23.27c0.74-20.98-1.3-41.81-3.14-62.66c-1.04-11.77-2.76-23.49-2.2-35.36   C851.46,414.25,851.25,413.79,851.15,413.33z M671.95,399.72c-1.14,0.22-2.2,0.34-3.22,0.62c-6.47,1.79-12.95,3.57-19.4,5.42   c-9.68,2.78-19.37,5.53-29.01,8.44c-6.47,1.95-10.52,6.26-12.27,12.89c-1.67,6.33-3.72,12.57-5.54,18.86   c-1.07,3.68-2.15,7.37-2.98,11.11c-0.48,2.16-0.68,4.43-0.62,6.65c0.11,4.68,2.53,7.38,7.08,8.27c3.48,0.68,6.98,0.76,10.51,0.45   c11.31-0.99,22.63-1.91,33.94-2.87c5.58-0.47,11.15-0.95,16.73-1.46c0.55-0.05,1.09-0.28,1.68-0.45c-0.27-0.58-0.32-0.97-0.53-1.11   c-9.67-6.32-19.73-11.87-30.9-15.12c-2.9-0.84-5.79-1.82-8.93-1.18c-1.17,0.24-2.19-0.39-2.75-1.5c-0.45-0.88-0.04-2.1,1.06-2.91   c1.67-1.23,3.54-2.22,5.11-3.56c8.92-7.69,16.77-16.25,21.54-27.24c0.38-0.88,0.78-1.77,1.34-2.54c2.06-2.84,5.76-2.75,7.57,0.24   c0.65,1.06,0.92,2.37,1.27,3.58c0.24,0.83,0.34,1.71,0.55,2.84C667.15,415.12,671.17,405.04,671.95,399.72z"/>
+	<path class="dog-wm-0" d="M858.98,157.27c1.42,1.98,9.17,0.86,12.71-2.35c4.96-4.5,4.01-10.5,3.18-12.54c-0.82-2.05-1.86-2.54-2.54-0.54   s-4.09,7.24-8.76,10.4C858.89,155.39,858.07,156.01,858.98,157.27z"/>
+	<g>
+		<path class="dog-wm-1" d="M800.77,653.79c0.3,0,0.41,0,0.81,0.3c2.74,1.76,6.7,6.28,0.17,11.64c-0.12,0.1-0.69,0.45-0.97,0.5    l-20.63-0.01l-258.9-0.04c0,0-18.93-1.28-32.2-3.17c-22.52-2.65-13.52-5.4,0.44-6.88c-1.46-0.27,33.38-2.35,33.38-2.35h257.27    H800.77z"/>
+	</g>
+	<g>
+		<path class="dog-wm-1" d="M577.09,666.23c-0.3,0-0.41,0-0.81-0.3c-2.74-1.76-6.7-6.28-0.17-11.64c0.12-0.1,0.69-0.45,0.97-0.5    l20.63,0.01l258.9,0.04c0,0,18.93,1.28,32.2,3.17c22.52,2.65,13.52,5.4-0.44,6.88c1.46,0.27-33.38,2.35-33.38,2.35H597.72H577.09z    "/>
+	</g>
+</g>
+</svg>
 <div class="wrap">
   <div class="kpis">
     <div class="kpi reveal"><div class="big num" data-count="15">0</div><div class="lbl">Onboarding time per worker</div><div class="sub">down from 6–10 hours</div></div>
@@ -265,18 +334,19 @@
     <div class="end to"><div class="lbl">After Canyou</div><div class="big">15 min</div><div class="sm">done before the meeting</div></div>
   </div>
 </div>
+</div>
 
 <!-- SUB NAV: three acts -->
 <div class="subnav">
   <div class="wrap"><div class="row">
-    <a href="#before"><span class="dot"></span>Before</a>
-    <a href="#during"><span class="dot"></span>During</a>
-    <a href="#after"><span class="dot"></span>After</a>
+    <a href="#before">Before Canyou</a>
+    <a href="#during">During implementation</a>
+    <a href="#after">Now, with Canyou</a>
   </div></div>
 </div>
 
 <!-- ===================== ACT 1: BEFORE ===================== -->
-<section id="before" class="act">
+<section id="before" class="act act-lightblue">
   <div class="chapter">
     <div class="wrap"><div class="inner reveal">
       <div class="ch-no">01</div>
@@ -325,7 +395,7 @@
     <div class="wrap"><div class="inner reveal">
       <div class="ch-no">02</div>
       <div>
-        <div class="ch-kicker">During</div>
+        <div class="ch-kicker">During implementation</div>
         <h2 class="ch-title">Choosing and rolling out Canyou</h2>
         <p class="ch-sub">Lewis needed a solution that fit the way Fast Labour Hire already worked, without reorganising the business around a new system.</p>
       </div>
@@ -386,12 +456,12 @@
 </section>
 
 <!-- ===================== ACT 3: AFTER ===================== -->
-<section id="after" class="act">
+<section id="after" class="act bg-egg">
   <div class="chapter">
     <div class="wrap"><div class="inner reveal">
       <div class="ch-no">03</div>
       <div>
-        <div class="ch-kicker">After Canyou</div>
+        <div class="ch-kicker">Now, with Canyou</div>
         <h2 class="ch-title">The results</h2>
       </div>
     </div></div>
@@ -404,7 +474,7 @@
       <div class="seg" role="tablist" aria-label="Compare before and after">
         <button data-state="before">Before Canyou</button>
         <button data-state="both" class="active">Compare</button>
-        <button data-state="after">After Canyou</button>
+        <button data-state="after">Now, with Canyou</button>
       </div>
       <div class="cmp" id="cmp" data-state="both">
         <div class="col bef">
@@ -415,14 +485,14 @@
           <div class="ln"><span class="area">Document collection</span>Email, spreadsheets, paper forms</div>
         </div>
         <div class="col aft">
-          <div class="ch"><span class="d"></span>After Canyou</div>
+          <div class="ch"><span class="d"></span>Now, with Canyou</div>
           <div class="ln"><span class="area">Onboarding time per worker</span>Under 15 minutes</div>
           <div class="ln"><span class="area">Admin hours per week</span>31 to 60 minutes</div>
           <div class="ln"><span class="area">Follow-ups per worker</span>Fewer errors and follow-ups</div>
           <div class="ln"><span class="area">Document collection</span>Single link sent to candidate</div>
         </div>
       </div>
-      <div class="hint">Tap “Before Canyou” or “After Canyou” to focus a single side.</div>
+      <div class=”hint”>Tap “Before Canyou” or “Now, with Canyou” to focus a single side.</div>
     </div>
   </div></div>
 
@@ -465,9 +535,22 @@
 <footer>
   <div class="wrap fb">
     <span>Timing and figures described qualitatively by Fast Labour Hire and based on their direct estimates. Results may vary.</span>
-    <span class="logo">Canyou<b>.</b></span>
+    <span class="logo"><svg width="72" viewBox="0 0 335 96" style="display:block;"><path style="fill:#fff;stroke:#fff;stroke-miterlimit:10;" d="M545.32,412.92c13.82,0,24.53-8.92,24.53-29.66h-6.74c0,14-4.84,22.29-16.32,22.29-14,0-17.54-12.23-17.54-29.76,0-18.46,3.89-31.53,15.12-31.53,8.37,0,13.56,7.16,14.94,21.26h10.54V337H563.8v13.9c-3.63-9.44-10.88-13.9-19.17-13.9C527.78,337,515,355.25,515,375.37c0,17.84,9.85,37.55,30.32,37.55Zm43.44-.83A15.69,15.69,0,0,0,603.88,402c1.12,6.84,4.75,10.06,10.1,10.06,7.6,0,10.19-6,10.28-16.08h-5.61c0,5.19-.52,7.47-2.77,7.47-2.42,0-2.5-2.49-2.5-6.74v-23c0-12-6.83-16.8-17.62-16.8-13.91,0-19.7,7.68-19.7,14.63,0,4.46,2.51,8.4,6.83,8.4,4.06,0,6.48-3.63,6.48-7.37a7.93,7.93,0,0,0-3.2-6.53,12.57,12.57,0,0,1,7.34-2.18c5.44,0,8.38,2.7,8.38,9.23v7l-7.34,1.24c-12.35,2.18-19.18,6-19.18,16.6,0,9.85,5.79,14.21,13.39,14.21Zm-1-16c0-6.12,2.94-8,9.16-9.44l4.92-.94v5.71c0,7.36-3.2,12.34-8.29,12.34-4,0-5.79-2.9-5.79-7.67Zm38.26,15.14h24.45v-6.74H644.9V385.85c0-13.8,3.89-19.5,9.68-19.5,3.45,0,6,2.18,6,8.4v29.77H655v6.74H678.5v-6.74h-6.39V373.2c0-9.34-4.58-16.29-13.39-16.29-7.6,0-13.56,4.57-16.06,15.25V358H625.21v6.74h8.21v39.83h-7.35v6.74ZM690.59,432c9.68,0,14.6-9.33,16.93-16.28l17-51h6V358H710.46v6.74h7.77l-10.79,33.6-11.06-33.6h7.26V358h-25v6.74h5l18.06,49.47-.61,1.87c-1.47,4.56-5.09,8.4-9.24,8.61a13.82,13.82,0,0,0,.86-4.67c0-4.05-1.9-8.09-6.56-8.09-4.49,0-7.08,4.36-7.08,9,0,5.29,3.54,11.1,11.48,11.1Zm61.33-19.91c11.05,0,21.68-9.86,21.68-27.07,0-16.28-9.42-28.11-21.68-28.11-11,0-21.68,9.86-21.68,27.07,0,16.28,9.5,28.11,21.68,28.11Zm-8.81-28.52c0-16.08,3.45-19.6,8.46-19.6,4.75,0,9.25,3.31,9.25,21.46,0,16.08-3.46,19.6-8.47,19.6-4.75,0-9.24-3.31-9.24-21.46Zm52.51,28.52c7.52,0,13-4.88,15.38-16.39v15.56h16.24v-6.74H820V358H801.76v6.74h6.73v18.36c0,13.9-3.63,19.6-9.33,19.6-3.54,0-5.61-2.28-5.61-8.3V358H774.72v6.74h7.34V395.8c0,9.34,4.75,16.29,13.56,16.29Zm45,.52c5.1,0,8.38-3.95,8.38-9.55s-3.28-9.54-8.38-9.54-8.38,3.94-8.38,9.54,3.37,9.55,8.38,9.55Z" transform="translate(-514.5 -336.5)"/></svg></span>
   </div>
 </footer>
+
+<!-- BOOK A DEMO POPUP -->
+<div id="demo-backdrop" aria-hidden="true"></div>
+<div id="demo-popup" role="dialog" aria-modal="true" aria-label="Book a demo with Canyou">
+  <button class="popup-close" id="popup-close" aria-label="Dismiss">&times;</button>
+  <div class="popup-logo">
+    <svg width="80" viewBox="0 0 335 96"><path style="fill:#2667FF;stroke:#2667FF;stroke-miterlimit:10;" d="M545.32,412.92c13.82,0,24.53-8.92,24.53-29.66h-6.74c0,14-4.84,22.29-16.32,22.29-14,0-17.54-12.23-17.54-29.76,0-18.46,3.89-31.53,15.12-31.53,8.37,0,13.56,7.16,14.94,21.26h10.54V337H563.8v13.9c-3.63-9.44-10.88-13.9-19.17-13.9C527.78,337,515,355.25,515,375.37c0,17.84,9.85,37.55,30.32,37.55Zm43.44-.83A15.69,15.69,0,0,0,603.88,402c1.12,6.84,4.75,10.06,10.1,10.06,7.6,0,10.19-6,10.28-16.08h-5.61c0,5.19-.52,7.47-2.77,7.47-2.42,0-2.5-2.49-2.5-6.74v-23c0-12-6.83-16.8-17.62-16.8-13.91,0-19.7,7.68-19.7,14.63,0,4.46,2.51,8.4,6.83,8.4,4.06,0,6.48-3.63,6.48-7.37a7.93,7.93,0,0,0-3.2-6.53,12.57,12.57,0,0,1,7.34-2.18c5.44,0,8.38,2.7,8.38,9.23v7l-7.34,1.24c-12.35,2.18-19.18,6-19.18,16.6,0,9.85,5.79,14.21,13.39,14.21Zm-1-16c0-6.12,2.94-8,9.16-9.44l4.92-.94v5.71c0,7.36-3.2,12.34-8.29,12.34-4,0-5.79-2.9-5.79-7.67Zm38.26,15.14h24.45v-6.74H644.9V385.85c0-13.8,3.89-19.5,9.68-19.5,3.45,0,6,2.18,6,8.4v29.77H655v6.74H678.5v-6.74h-6.39V373.2c0-9.34-4.58-16.29-13.39-16.29-7.6,0-13.56,4.57-16.06,15.25V358H625.21v6.74h8.21v39.83h-7.35v6.74ZM690.59,432c9.68,0,14.6-9.33,16.93-16.28l17-51h6V358H710.46v6.74h7.77l-10.79,33.6-11.06-33.6h7.26V358h-25v6.74h5l18.06,49.47-.61,1.87c-1.47,4.56-5.09,8.4-9.24,8.61a13.82,13.82,0,0,0,.86-4.67c0-4.05-1.9-8.09-6.56-8.09-4.49,0-7.08,4.36-7.08,9,0,5.29,3.54,11.1,11.48,11.1Zm61.33-19.91c11.05,0,21.68-9.86,21.68-27.07,0-16.28-9.42-28.11-21.68-28.11-11,0-21.68,9.86-21.68,27.07,0,16.28,9.5,28.11,21.68,28.11Zm-8.81-28.52c0-16.08,3.45-19.6,8.46-19.6,4.75,0,9.25,3.31,9.25,21.46,0,16.08-3.46,19.6-8.47,19.6-4.75,0-9.24-3.31-9.24-21.46Zm52.51,28.52c7.52,0,13-4.88,15.38-16.39v15.56h16.24v-6.74H820V358H801.76v6.74h6.73v18.36c0,13.9-3.63,19.6-9.33,19.6-3.54,0-5.61-2.28-5.61-8.3V358H774.72v6.74h7.34V395.8c0,9.34,4.75,16.29,13.56,16.29Zm45,.52c5.1,0,8.38-3.95,8.38-9.55s-3.28-9.54-8.38-9.54-8.38,3.94-8.38,9.54,3.37,9.55,8.38,9.55Z" transform="translate(-514.5 -336.5)"/></svg>
+  </div>
+  <div class="popup-h">See how Canyou fills the gaps</div>
+  <p class="popup-sub">Automate document collection, onboard your team without the follow-ups and keep compliance on track. Setup takes 10 minutes. No costly implementation.</p>
+  <a class="btn btn-primary popup-cta" href="https://calendly.com/shannoncanyou" target="_blank" rel="noopener">Book a Demo</a>
+  <a class="popup-dismiss" id="popup-dismiss">No thanks</a>
+</div>
 
 <script>
 (function(){
@@ -491,6 +574,18 @@
 
   var cmp=document.getElementById('cmp');
   document.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.seg button').forEach(function(x){x.classList.remove('active');});b.classList.add('active');cmp.setAttribute('data-state',b.getAttribute('data-state'));});});
+
+  // Book a Demo popup
+  var popup=document.getElementById('demo-popup');
+  var backdrop=document.getElementById('demo-backdrop');
+  var popupShown=false;
+  function showPopup(){popup.classList.add('visible');backdrop.classList.add('visible');}
+  function dismissPopup(){popup.classList.remove('visible');backdrop.classList.remove('visible');popup.classList.add('hidden');backdrop.classList.add('hidden');}
+  document.getElementById('popup-close').addEventListener('click',dismissPopup);
+  document.getElementById('popup-dismiss').addEventListener('click',dismissPopup);
+  backdrop.addEventListener('click',dismissPopup);
+  var ioPopup=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!popupShown){popupShown=true;setTimeout(showPopup,600);}});},{threshold:.15});
+  var closingSec=document.querySelector('.closing');if(closingSec)ioPopup.observe(closingSec);
 
   var spy=document.querySelectorAll('nav.main a, .subnav a');
   var ids=['before','during','after'];
