@@ -69,8 +69,8 @@
   .wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;display:block;}
 
   /* KPI cards */
-  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-78px;position:relative;z-index:5;}
-  .kpi{background:#fff;border-radius:16px;padding:26px;box-shadow:var(--shadow-lg);border:2px solid var(--line);}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:-78px;position:relative;z-index:5;background:#fff;border-radius:16px;box-shadow:var(--shadow-lg);border:1px solid var(--line);}
+  .kpi{background:transparent;border-radius:0;padding:26px;box-shadow:none;border:none;}
   .kpi .big{font-family:'Termoli';font-size:50px;font-weight:800;line-height:1;color:var(--blue-deep);}
   .kpi .big .u{font-size:21px;color:var(--ink-40);}
   .kpi .lbl{font-size:13.5px;font-weight:700;margin-top:10px;}
@@ -120,7 +120,7 @@
   /* problem */
   .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px;}
   .pchips{display:flex;flex-direction:column;gap:10px;}
-  .pchip{display:flex;gap:12px;align-items:center;font-size:14px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .pchip{display:flex;gap:12px;align-items:flex-start;font-size:14px;font-weight:600;padding:11px 0;border-bottom:1px solid var(--line);}
   .pchip .x{flex:none;width:24px;height:24px;border-radius:7px;background:var(--bg-soft);color:var(--ink-40);display:grid;place-items:center;}
   .pchip .x svg{width:12px;height:12px;}
   .ptext p{font-size:14.5px;line-height:1.65;color:var(--ink-60);margin-bottom:14px;}.ptext b{color:var(--ink);}
@@ -134,7 +134,7 @@
   .breakpoint p{font-size:14.5px;line-height:1.65;color:#E7ECFB;margin-top:10px;max-width:64ch;}
 
   /* decision banner */
-  .banner{margin-top:28px;padding:32px 36px;border-radius:16px;background:#fff;border:2px solid var(--blue-100);position:relative;overflow:hidden;}
+  .banner{margin-top:28px;padding:28px 0;border-radius:0;background:transparent;border:none;border-top:2px solid var(--blue-100);position:relative;overflow:hidden;}
   .banner .lab{font-size:12px;font-weight:700;color:var(--ink-40);margin-bottom:8px;}
   .banner h3{font-family:'Termoli';font-size:clamp(20px,2.6vw,26px);font-weight:700;margin-top:10px;max-width:24ch;}
   .banner .bintro{font-size:14.5px;color:var(--ink-60);margin-top:12px;max-width:60ch;}
@@ -160,7 +160,7 @@
   .card .ci{width:40px;height:40px;border-radius:10px;background:var(--blue-50);color:var(--blue);display:grid;place-items:center;margin-bottom:13px;}
   .card .ci svg{width:20px;height:20px;}
   .card h3{font-size:14.5px;font-weight:800;line-height:1.32;margin-top:2px;}
-  .flow{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:20px;background:#fff;border:2px solid var(--blue-100);border-radius:14px;padding:20px 24px;}
+  .flow{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:24px;background:transparent;border:none;border-top:1px solid var(--line);padding:20px 0;}
   .flow .st{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:700;}
   .flow .st .ic{width:34px;height:34px;border-radius:10px;background:var(--blue-50);color:var(--blue-deep);display:grid;place-items:center;}
   .flow .st .ic svg{width:17px;height:17px;}
@@ -268,6 +268,39 @@
   a.canyou-link{color:var(--blue);text-decoration:none;font-weight:inherit;}
   a.canyou-link:hover{text-decoration:underline;}
   .hero a.canyou-link,.chapter.dark a.canyou-link,.ribbon a.canyou-link,.closing a.canyou-link{color:inherit;}
+
+  /* === revised KPI strip === */
+  .kpi+.kpi{border-left:1px solid var(--line);}
+  @media(max-width:820px){.kpi+.kpi{border-left:none;border-top:1px solid var(--line);}}
+
+  /* === feat-list: numbered editorial list === */
+  .feat-list{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:28px;border-top:1px solid var(--line);}
+  .feat{display:flex;gap:16px;align-items:flex-start;padding:22px 0;border-bottom:1px solid var(--line);}
+  .feat:nth-child(even){padding-left:32px;border-left:1px solid var(--line);}
+  .feat:nth-child(odd){padding-right:32px;}
+  .feat-n{font-family:'Termoli';font-size:28px;font-weight:800;color:var(--blue-100);line-height:1;flex:none;width:36px;}
+  .feat-body h3{font-size:14.5px;font-weight:800;line-height:1.32;color:var(--ink);}
+  @media(max-width:820px){.feat-list{grid-template-columns:1fr;}.feat:nth-child(even){padding-left:0;border-left:none;}.feat:nth-child(odd){padding-right:0;}}
+
+  /* === stat-moment: visual surprise — 15 min at editorial scale === */
+  .stat-moment{margin-top:40px;padding:40px 0 0;border-top:2px solid var(--line);}
+  .sm-main{display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;}
+  .sm-before{font-family:'Termoli';font-size:clamp(28px,4vw,44px);font-weight:800;color:var(--ink-40);line-height:1;text-decoration:line-through;text-decoration-color:rgba(0,0,0,.2);}
+  .sm-to{font-family:'Termoli';font-size:clamp(96px,17.5vw,200px);font-weight:800;color:var(--blue-deep);line-height:.9;letter-spacing:-.04em;}
+  .sm-label{font-size:15px;font-weight:600;color:var(--ink-40);margin-top:12px;}
+  .sm-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:32px;border-top:1px solid var(--line);}
+  .sm-item{padding:20px 0;border-bottom:1px solid var(--line);}
+  .sm-item:nth-child(odd){padding-right:32px;}
+  .sm-item:nth-child(even){padding-left:32px;border-left:1px solid var(--line);}
+  .sm-f{font-family:'Termoli';font-size:22px;font-weight:800;color:var(--ink-40);text-decoration:line-through;text-decoration-color:rgba(0,0,0,.2);line-height:1;}
+  .sm-t{font-family:'Termoli';font-size:38px;font-weight:800;color:var(--blue-deep);line-height:1;margin-top:4px;}
+  .sm-l{font-size:12px;font-weight:600;color:var(--ink-40);margin-top:6px;}
+  @media(max-width:820px){.sm-grid{grid-template-columns:1fr;}.sm-item:nth-child(odd){padding-right:0;}.sm-item:nth-child(even){padding-left:0;border-left:none;}.sm-to{font-size:clamp(80px,22vw,120px);}}
+
+  /* === heading size variants === */
+  .ch-title--lg{font-size:clamp(36px,6.5vw,62px) !important;}
+  .ch-title--sm{font-size:clamp(22px,3.5vw,34px) !important;}
+  h2.sec-lg{font-family:'Termoli';font-size:clamp(26px,4.2vw,42px);font-weight:800;line-height:1.12;letter-spacing:-.025em;margin-top:0;margin-bottom:20px;max-width:22ch;}
 </style>
 </head>
 <body>
@@ -379,7 +412,6 @@
   </div>
 
   <div class="block"><div class="wrap">
-    <div class="seclabel reveal">A manual process that didn’t scale</div>
     <div class="pgrid">
       <div class="ptext reveal">
         <p>Every new hire needed photo ID, TFN, licences, right-to-work, bank, super, contracts, police checks, and resume, all chased manually via email, spreadsheets, and paper forms.</p>
@@ -412,7 +444,7 @@
       <div class="ch-no">02</div>
       <div>
         <div class="ch-kicker">Solution</div>
-        <h2 class="ch-title">Choosing and rolling out <a href="https://canyou.com.au" class="canyou-link" target="_blank" rel="noopener">Canyou</a></h2>
+        <h2 class="ch-title ch-title--lg">Choosing and rolling out <a href="https://canyou.com.au" class="canyou-link" target="_blank" rel="noopener">Canyou</a></h2>
         <p class="ch-sub">Lewis needed a solution that fit the way Fast Labour Hire already worked, without reorganising the business around a new system.</p>
       </div>
     </div></div>
@@ -443,15 +475,14 @@
 
   <!-- the new workflow -->
   <div class="block"><div class="wrap">
-    <div class="seclabel reveal">The new workflow</div>
-    <h2 class="sec reveal">Single link, all docs done pre-meeting.</h2>
-    <div class="cards">
-      <div class="card reveal"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></div><h3>Single link, all docs done pre-meeting</h3></div>
-      <div class="card reveal"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div><h3>Automated reminders</h3></div>
-      <div class="card reveal"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 3v6h6"/></svg></div><h3>Fits existing workflow</h3></div>
-      <div class="card reveal"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Centralised compliance records</h3></div>
+    <h2 class="sec-lg reveal">Single link, all docs done pre-meeting.</h2>
+    <div class="feat-list">
+      <div class="feat reveal"><div class="feat-n">01</div><div class="feat-body"><h3>Single link, all docs done pre-meeting</h3></div></div>
+      <div class="feat reveal"><div class="feat-n">02</div><div class="feat-body"><h3>Automated reminders</h3></div></div>
+      <div class="feat reveal"><div class="feat-n">03</div><div class="feat-body"><h3>Fits existing workflow</h3></div></div>
+      <div class="feat reveal"><div class="feat-n">04</div><div class="feat-body"><h3>Centralised compliance records</h3></div></div>
     </div>
-    <div class="flow reveal">
+        <div class="flow reveal">
       <div class="st"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></span>Single link sent</div>
       <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       <div class="st"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>Docs done pre-meeting</div>
@@ -462,7 +493,6 @@
 
   <!-- rollout -->
   <div class="block" style="padding-bottom:46px;"><div class="wrap">
-    <div class="seclabel reveal">Live from day one</div>
     <p class="intro reveal">Fast Labour Hire ran a pilot before committing to a full rollout. It was the right call. But adoption was never going to be the problem. Instead of chasing workers for documents after the fact, the team sent candidates a <a href="https://canyou.com.au" class="canyou-link" target="_blank" rel="noopener">Canyou</a> link upfront, and by the time they walked through the door for a face-to-face, documentation was already done.</p>
     <div class="pq reveal">
       <div class="qt">“It was very easy to get everyone up to speed as it was very user friendly and easy to implement from day one.”</div>
@@ -478,39 +508,37 @@
       <div class="ch-no">03</div>
       <div>
         <div class="ch-kicker">Results</div>
-        <h2 class="ch-title">The results</h2>
+        <h2 class="ch-title ch-title--sm">The results</h2>
       </div>
     </div></div>
   </div>
 
-  <!-- transformation metrics callout -->
+  <!-- stat-moment: editorial typographic treatment -->
   <div class="block"><div class="wrap">
-    <div class="seclabel reveal">The transformation in numbers</div>
-    <div class="tfm-grid reveal">
-      <div class="tfm-card">
-        <div class="tfm-from">6&ndash;10 hrs</div>
-        <div class="tfm-arr">&#8595;</div>
-        <div class="tfm-to">15 min</div>
-        <div class="tfm-lbl">Onboarding per worker</div>
+    <div class="stat-moment reveal">
+      <div class="sm-main">
+        <div>
+          <div class="sm-before">6&ndash;10 hrs</div>
+          <div class="sm-to">15 min</div>
+          <div class="sm-label">to onboard one worker</div>
+        </div>
       </div>
-      <div class="tfm-sep"></div>
-      <div class="tfm-card">
-        <div class="tfm-from">10+</div>
-        <div class="tfm-arr">&#8595;</div>
-        <div class="tfm-to">~0</div>
-        <div class="tfm-lbl">Follow-ups per hire</div>
-      </div>
-      <div class="tfm-sep"></div>
-      <div class="tfm-card">
-        <div class="tfm-from">6&ndash;10 hrs</div>
-        <div class="tfm-arr">&#8595;</div>
-        <div class="tfm-to">30&ndash;60 min</div>
-        <div class="tfm-lbl">Admin per week</div>
+      <div class="sm-grid">
+        <div class="sm-item">
+          <div class="sm-f">10+</div>
+          <div class="sm-t">~0</div>
+          <div class="sm-l">Follow-ups per hire</div>
+        </div>
+        <div class="sm-item">
+          <div class="sm-f">6&ndash;10 hrs</div>
+          <div class="sm-t">30&ndash;60 min</div>
+          <div class="sm-l">Admin per week</div>
+        </div>
       </div>
     </div>
   </div></div>
 
-  <!-- before/after comparison table -->
+    <!-- before/after comparison table -->
   <div class="block"><div class="wrap">
     <div class="seclabel reveal">Before vs After</div>
     <div class="ba-table reveal">
@@ -548,13 +576,12 @@
   </div></div>
 
   <div class="block"><div class="wrap">
-    <p class="intro reveal">    <p class="intro reveal">Document trails are now consistent, follow-ups are auditable, and there is a centralised record of what has been collected and what has not.</p>
+    <p class="intro reveal">Document trails are now consistent, follow-ups are auditable, and there is a centralised record of what has been collected and what has not.</p>
   </div></div>
 </section>
 
 <!-- CLOSING -->
 <section class="closing">
-  <svg class="wave-top" viewBox="0 0 1080 70" preserveAspectRatio="none"><path d="M0,30 C200,5 360,58 540,36 C720,14 860,60 1080,30 L1080,0 L0,0 Z" fill="#fff"/></svg>
   <svg class="hatch" viewBox="0 0 260 260"><defs><pattern id="h3" width="11" height="11" patternTransform="rotate(135)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="11" stroke="#fff" stroke-width="1"/></pattern></defs><rect width="260" height="260" fill="url(#h3)"/></svg>
   <div class="wrap">
     <div class="lab reveal">The outcome</div>
